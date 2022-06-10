@@ -1,0 +1,15 @@
+.editor-container {
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 1px rgba(36, 36, 36, 0.2);
+    border: solid 1px rgba(36, 36, 36, 0.2);
+    margin: 1em auto 0 auto;
+    width: 80%;
+}
+
+.editor {
+    min-height: 20rem;
+}
+
+.editor:focus {
+    outline: none;
+}
