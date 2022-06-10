@@ -22,3 +22,7 @@
 .control__underline {
   text-decoration: underline;
 }
+
+.control__strike-through {
+  text-decoration: line-through;
+}

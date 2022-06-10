@@ -10,6 +10,10 @@ export const applyUnderline = () => {
   document.execCommand("underline");
 };
 
+export const applyStrikeThrough = () => {
+  document.execCommand("strikeThrough");
+};
+
 export const applyLink = () => {
   const url = window.prompt("Image URL");
 
@@ -48,4 +52,12 @@ export const applyInsertImage = () => {
   }
 
   document.execCommand("insertImage", false, src);
+};
+
+export const applyRandomEmoji = () => {
+  document.execCommand(
+    "insertText",
+    false,
+    String.fromCodePoint(Math.floor(Math.random() * 62) + 128512)
+  );
 };
