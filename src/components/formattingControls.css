@@ -1,24 +1,24 @@
 .controls {
-    background-color: rgba(36, 36, 36, 0.2);
-    padding: 0.25em;
+  background-color: rgba(36, 36, 36, 0.2);
+  padding: 0.25em;
 }
 
 .control {
-    margin-right: 0.25em;
+  margin-right: 0.25em;
 }
 
 .control__button {
-    width: 2em;
+  width: 2em;
 }
 
 .control__bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.control__italics {
-    font-style: italic;
+.control__italic {
+  font-style: italic;
 }
 
 .control__underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
