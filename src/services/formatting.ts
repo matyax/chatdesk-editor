@@ -11,7 +11,13 @@ export const applyUnderline = () => {
 };
 
 export const applyLink = () => {
-  document.execCommand("createLink");
+  const url = window.prompt("Image URL");
+
+  if (!url) {
+    return false;
+  }
+
+  document.execCommand("createLink", false, url);
 };
 
 export const applyUl = () => {
@@ -35,5 +41,11 @@ export const applyJustifyRight = () => {
 };
 
 export const applyInsertImage = () => {
-  document.execCommand("insertImage");
+  const src = window.prompt("Image URL");
+
+  if (!src) {
+    return false;
+  }
+
+  document.execCommand("insertImage", false, src);
 };
