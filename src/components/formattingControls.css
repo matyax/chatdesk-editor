@@ -8,21 +8,16 @@
 }
 
 .control__button {
-  width: 2em;
+  align-items: center;
+  appearance: none;
+  border: none;
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
 }
 
-.control__bold {
-  font-weight: bold;
-}
-
-.control__italic {
-  font-style: italic;
-}
-
-.control__underline {
-  text-decoration: underline;
-}
-
-.control__strike-through {
-  text-decoration: line-through;
+.control__button--emoji {
+  font-size: 1.1em;
 }

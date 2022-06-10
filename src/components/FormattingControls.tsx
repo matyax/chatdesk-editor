@@ -1,4 +1,17 @@
 import {
+  FaAlignCenter,
+  FaAlignLeft,
+  FaAlignRight,
+  FaBold,
+  FaItalic,
+  FaFileImage,
+  FaLink,
+  FaListOl,
+  FaListUl,
+  FaStrikethrough,
+  FaUnderline,
+} from "react-icons/fa";
+import {
   applyBold,
   applyItalic,
   applyUnderline,
@@ -18,84 +31,84 @@ const FormattingControls = () => {
   return (
     <div className="controls">
       <button
-        className="control control__button control__bold"
+        className="control control__button"
         onClick={() => applyBold()}
         title="Bold"
       >
-        B
+        <FaBold />
       </button>
       <button
-        className="control control__button control__italic"
+        className="control control__button"
         onClick={() => applyItalic()}
         title="Italic"
       >
-        I
+        <FaItalic />
       </button>
       <button
-        className="control control__button control__underline"
+        className="control control__button"
         onClick={() => applyUnderline()}
         title="Bold"
       >
-        U
+        <FaUnderline />
       </button>
       <button
-        className="control control__button control__strike-through"
+        className="control control__button"
         onClick={() => applyStrikeThrough()}
         title="Strike through "
       >
-        S
+        <FaStrikethrough />
       </button>
       <button
         className="control control__button"
         onClick={() => applyLink()}
         title="Insert link"
       >
-        A
+        <FaLink />
       </button>
       <button
         className="control control__button"
         onClick={() => applyUl()}
         title="Insert bullet list"
       >
-        UL
+        <FaListUl />
       </button>
       <button
         className="control control__button"
         onClick={() => applyOl()}
         title="Insert numbered list"
       >
-        OL
+        <FaListOl />
       </button>
       <button
         className="control control__button"
         onClick={() => applyJustifyLeft()}
         title="Justify left"
       >
-        L
+        <FaAlignLeft />
       </button>
       <button
         className="control control__button"
         onClick={() => applyJustifyCenter()}
         title="Justify center"
       >
-        C
+        <FaAlignCenter />
       </button>
       <button
         className="control control__button"
         onClick={() => applyJustifyRight()}
         title="Justify right"
       >
-        R
+        <FaAlignRight />
       </button>
       <button
         className="control control__button"
         onClick={() => applyInsertImage()}
         title="Insert image"
       >
-        IM
+        <FaFileImage />
       </button>
       <button
-        className="control control__button"
+        className="control control__button control__button--emoji"
         onClick={() => applyRandomEmoji()}
         title="Insert random emoji"
       >
